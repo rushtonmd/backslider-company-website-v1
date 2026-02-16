@@ -3,53 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company Name</title>
+    <title>Backslider Performance | Custom Performance Racing</title>
+    <meta name="description" content="Backslider Performance - Custom performance builds, race prep, and tuning for serious drivers.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Company Name</div>
-            <ul>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Backslider Performance" class="logo">
+            </div>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#builds">Builds</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section class="hero">
-        <h1>Welcome to Company Name</h1>
-        <p>Your tagline or brief description here</p>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Tell your company story...</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service">
-                <h3>Service 1</h3>
-                <p>Description</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="logo.png" alt="Backslider Performance">
             </div>
-            <div class="service">
-                <h3>Service 2</h3>
-                <p>Description</p>
+            <h1 class="hero-title">
+                <span class="title-line">Push Limits.</span>
+                <span class="title-line">Break Records.</span>
+            </h1>
+            <p class="hero-subtitle">Custom performance builds engineered for speed</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+        <div class="hero-accent"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Who We Are</h2>
+                <div class="title-accent"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">At Backslider Performance, we don't just build cars—we create weapons for the track and street.</p>
+                    <p>With years of experience in performance tuning, race prep, and custom fabrication, we push every build to its absolute limit. From track-focused builds to daily drivers with serious bite, we engineer performance that's built to dominate.</p>
+                    <p>Every project is a collaboration between our expertise and your vision. We work with you to create something that's not just fast—it's unforgettable.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Builds Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Passion Driven</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: contact@yourcompany.com</p>
-        <p>Phone: (555) 123-4567</p>
+    <!-- Builds Portfolio -->
+    <section id="builds" class="builds">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Builds</h2>
+                <div class="title-accent"></div>
+            </div>
+            <div class="builds-grid">
+                <div class="build-card">
+                    <div class="build-image">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80" alt="Build 1">
+                        <div class="build-overlay">
+                            <span class="build-category">Track Build</span>
+                        </div>
+                    </div>
+                    <div class="build-info">
+                        <h3>Project Apex</h3>
+                        <p>Full race prep with custom suspension, forced induction, and aero package. Built to dominate time attack.</p>
+                        <ul class="build-specs">
+                            <li>650hp @ 7500rpm</li>
+                            <li>Custom turbo setup</li>
+                            <li>Full aero package</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="build-card">
+                    <div class="build-image">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Build 2">
+                        <div class="build-overlay">
+                            <span class="build-category">Street Build</span>
+                        </div>
+                    </div>
+                    <div class="build-info">
+                        <h3>Daily Weapon</h3>
+                        <p>Street-legal beast with tuned engine management, upgraded suspension, and aggressive styling.</p>
+                        <ul class="build-specs">
+                            <li>450hp reliable power</li>
+                            <li>Full interior preserved</li>
+                            <li>Daily driveable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="build-card">
+                    <div class="build-image">
+                        <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80" alt="Build 3">
+                        <div class="build-overlay">
+                            <span class="build-category">Drag Build</span>
+                        </div>
+                    </div>
+                    <div class="build-info">
+                        <h3>Quarter Mile King</h3>
+                        <p>Purpose-built drag machine with stripped weight, built engine, and launch control systems.</p>
+                        <ul class="build-specs">
+                            <li>800hp wheelpower</li>
+                            <li>8-second quarter mile</li>
+                            <li>Full cage installed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Do</h2>
+                <div class="title-accent"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Engine Tuning</h3>
+                    <p>Custom ECU calibration, dyno tuning, and power optimization for maximum performance and reliability.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Performance Upgrades</h3>
+                    <p>Turbo/supercharger installation, intake/exhaust systems, fuel system upgrades, and forced induction.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏁</div>
+                    <h3>Race Prep</h3>
+                    <p>Complete track preparation including safety equipment, suspension setup, and competition-ready builds.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Custom Fabrication</h3>
+                    <p>One-off parts, roll cages, exhaust systems, and custom metalwork tailored to your build.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Livery & Wraps</h3>
+                    <p>Custom paint, vinyl wraps, and graphics to make your build stand out on track or street.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Maintenance</h3>
+                    <p>Performance-focused maintenance, diagnostics, and repairs to keep your build running at its peak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Build Something</h2>
+                <div class="title-accent"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Ready to start your next build? Have questions about our services? Drop us a line and let's talk about what we can create together.</p>
+                    
+                    <div class="contact-details">
+                        <div class="detail">
+                            <span class="detail-label">Email</span>
+                            <a href="mailto:info@backsliderperformance.com">info@backsliderperformance.com</a>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Phone</span>
+                            <a href="tel:+15551234567">(555) 123-4567</a>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Location</span>
+                            <span>Your City, State</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-link" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-link" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select name="service">
+                            <option value="">Select a Service</option>
+                            <option value="tuning">Engine Tuning</option>
+                            <option value="upgrades">Performance Upgrades</option>
+                            <option value="race-prep">Race Prep</option>
+                            <option value="fabrication">Custom Fabrication</option>
+                            <option value="livery">Livery & Wraps</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Backslider Performance">
+                </div>
+                <p>&copy; 2024 Backslider Performance. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
