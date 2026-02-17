@@ -100,3 +100,46 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Image Carousel for Build Cards
+document.querySelectorAll('.build-card').forEach(card => {
+    const track = card.querySelector('.carousel-track');
+    const images = card.querySelectorAll('.carousel-image');
+    const prevBtn = card.querySelector('.prev');
+    const nextBtn = card.querySelector('.next');
+    const dots = card.querySelectorAll('.dot');
+    
+    let currentIndex = 0;
+    
+    function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        images.forEach((img, i) => {
+            img.classList.toggle('active', i === currentIndex);
+        });
+        
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
+    }
+    
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+    }
+    
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+    }
+    
+    nextBtn.addEventListener('click', nextImage);
+    prevBtn.addEventListener('click', prevImage);
+    
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            currentIndex = i;
+            updateCarousel();
+        });
+    });
+});
