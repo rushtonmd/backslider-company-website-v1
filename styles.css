@@ -898,6 +898,10 @@ section {
     .social-link-modern {
         width: 100%;
     }
+   
+    .logo-container {
+        height: 35px;  /* Was 50px on desktop */
+    }
 }
 
 @media (max-width: 480px) {
